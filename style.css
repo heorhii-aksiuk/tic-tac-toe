@@ -2,7 +2,19 @@
   --main-font: "Roboto", sans-serif;
   --main-bg-color: #c5c5c5;
   --container-bg-color: #fff;
+  --header-bg-coloer: #85c9ba;
   --button-bg-color: #ebe973;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
@@ -22,11 +34,58 @@ body {
 }
 
 .container {
+  padding-top: 0px;
   margin: 0 auto;
   width: 300px;
-  height: 300px;
+  height: 420px;
+  text-align: center;
   background-color: var(--container-bg-color);
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.header {
+  padding-top: 5px;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: -10px;
+  width: 320px;
+  height: 100px;
+  background-color: var(--header-bg-coloer);
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #cfcfcf 0%,
+    #55cf5d 100%
+  );
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.65);
+}
+
+.title {
+  font-family: fantasy;
+  font-weight: 500;
+  background: #121fcf;
+  background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paragraph,
+.turn {
+  font-size: 18px;
+  color: #7b43aa;
+}
+
+.turn {
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+.score {
+  color: #572b74;
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .list {
@@ -47,8 +106,11 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-size: 50px;
+  color: #7b43aa;
   background-color: var(--button-bg-color);
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
 }
